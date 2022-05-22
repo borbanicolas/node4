@@ -15,6 +15,8 @@ const formSchema = {
 }
 const Form = mongoose.model('Form', formSchema)
 
+app.use(express.static(__dirname + "/public"))
+
 app.get('/', (req, res) => {
     res.sendFile(__dirname + "/index.html")
 })
