@@ -5,7 +5,7 @@ const bodyParser = require('body-parser')
 const app = express()
 
 app.use(bodyParser.urlencoded({extended: true}))
-mongoose.connect("mongodb+srv://devilfish:agua1175@cluster0.5zioa.mongodb.net/myFirstDatabase", {useNewUrlParser: true}, {useUnifiedTopology: true})
+mongoose.connect("mongodb+srv://devilfish:agua1175@cluster0.5zioa.mongodb.net/myFirstDatabase")
 
 
 const formSchema = {
